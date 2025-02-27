@@ -12,9 +12,9 @@ export default function LoginPage() {
       <h1 className="text-3xl font-bold mb-8">Sign In</h1>
       {signin_options.map((client) => (
         <Link key={client.client_name} href={client.path}>
-          <a className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+          <div className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
             Sign in with {client.client_name}
-          </a>
+          </div>
         </Link>
       ))}
     </div>

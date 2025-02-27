@@ -12,6 +12,6 @@ export default async function Home() {
     redirect("/inbox");
   } else {
     // Redirect unauthenticated users to signin
-    redirect("/");
+    redirect("/auth/login");
   }
 }
